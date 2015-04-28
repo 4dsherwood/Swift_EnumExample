@@ -2,6 +2,7 @@
 //  ViewController.swift
 //  Swift_EnumExample
 //
+// enum example based on Code from Wes Filleman
 //
 
 import UIKit
@@ -9,8 +10,8 @@ import UIKit
 // Two versions of enumerations
 // Version 1: direct method
 enum stringEnumType: String {
-    case Apple          = "apple.png"
-    case Pear           = "pear.png"
+    case Apple          = "apple.jpg"
+    case Pear           = "pear.jpg"
     case Strawberry     = "strawberry.png"
     case Lemon          = "lemon.png"
 }
@@ -27,7 +28,7 @@ var fruitImage: UIImageView!
 var fruitName_V1: stringEnumType = .Apple
 
 
-var myFruitName_V2: intEnumType = intEnumType (rawValue: 0)! //Apple
+var myFruitName_V2: intEnumType = intEnumType (rawValue: 1)! //Pear
 var cannotUseImplicitType = 1  //this is an int and wont work with intEnumType
 
 
@@ -39,7 +40,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
       
         let fruitImage =      UIImageView(image:UIImage(named:"strawberry.png"))
-        fruitImage.frame = CGRect(x: 0, y:0, width:200, height:200)
+        fruitImage.frame = CGRect(x: 0, y:0, width:100, height:100)
         view.addSubview(fruitImage)
 
     }
