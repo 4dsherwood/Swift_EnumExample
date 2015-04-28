@@ -12,7 +12,11 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+      
+        let imageVersion1 =      UIImageView(image:UIImage(named:"strawberry.png"))
+        imageVersion1.frame = CGRect(x: 0, y:0, width:100, height:200)
+        view.addSubview(imageVersion1)
+
     }
 
     override func didReceiveMemoryWarning() {

@@ -13,6 +13,10 @@
 		99325F4E1AF03B180074614A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99325F4D1AF03B180074614A /* Images.xcassets */; };
 		99325F511AF03B180074614A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99325F4F1AF03B180074614A /* LaunchScreen.xib */; };
 		99325F5D1AF03B180074614A /* Swift_EnumExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99325F5C1AF03B180074614A /* Swift_EnumExampleTests.swift */; };
+		99325F671AF03C9B0074614A /* strawberry.png in Resources */ = {isa = PBXBuildFile; fileRef = 99325F661AF03C9B0074614A /* strawberry.png */; };
+		99325F6A1AF03CE80074614A /* lemon.png in Resources */ = {isa = PBXBuildFile; fileRef = 99325F681AF03CE80074614A /* lemon.png */; };
+		99325F6B1AF03CE80074614A /* pear.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 99325F691AF03CE80074614A /* pear.jpg */; };
+		99325F6D1AF03CF60074614A /* apple.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 99325F6C1AF03CF60074614A /* apple.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 		99325F561AF03B180074614A /* Swift_EnumExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Swift_EnumExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		99325F5B1AF03B180074614A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		99325F5C1AF03B180074614A /* Swift_EnumExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_EnumExampleTests.swift; sourceTree = "<group>"; };
+		99325F661AF03C9B0074614A /* strawberry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = strawberry.png; sourceTree = "<group>"; };
+		99325F681AF03CE80074614A /* lemon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lemon.png; sourceTree = "<group>"; };
+		99325F691AF03CE80074614A /* pear.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pear.jpg; sourceTree = "<group>"; };
+		99325F6C1AF03CF60074614A /* apple.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = apple.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +98,10 @@
 		99325F441AF03B180074614A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				99325F681AF03CE80074614A /* lemon.png */,
+				99325F691AF03CE80074614A /* pear.jpg */,
+				99325F6C1AF03CF60074614A /* apple.jpg */,
+				99325F661AF03C9B0074614A /* strawberry.png */,
 				99325F451AF03B180074614A /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -193,7 +205,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				99325F4C1AF03B180074614A /* Main.storyboard in Resources */,
+				99325F6B1AF03CE80074614A /* pear.jpg in Resources */,
 				99325F511AF03B180074614A /* LaunchScreen.xib in Resources */,
+				99325F6D1AF03CF60074614A /* apple.jpg in Resources */,
+				99325F6A1AF03CE80074614A /* lemon.png in Resources */,
+				99325F671AF03C9B0074614A /* strawberry.png in Resources */,
 				99325F4E1AF03B180074614A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
