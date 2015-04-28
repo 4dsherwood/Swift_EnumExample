@@ -38,9 +38,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
       
-        let myImage =      UIImageView(image:UIImage(named:"strawberry.png"))
-        myImage.frame = CGRect(x: 0, y:0, width:200, height:200)
-        view.addSubview(myImage)
+        let fruitImage =      UIImageView(image:UIImage(named:"strawberry.png"))
+        fruitImage.frame = CGRect(x: 0, y:0, width:200, height:200)
+        view.addSubview(fruitImage)
 
     }
 
