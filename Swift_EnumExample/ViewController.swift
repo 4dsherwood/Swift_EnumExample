@@ -59,7 +59,11 @@ class ViewController: UIViewController {
     //               leverages Swift enumeration
     // Use the .rawValue operator to get to the underlying value (string) from the enum as a value to pass into the UIImage.named call.
     func fruitSelectedDirectMethod_v1(fruitOption: stringEnumType) {
+// ?how do I clear previous image?
+        //view.clearsContextBeforeDrawing
         fruitImage = UIImageView(image:UIImage(named: fruitOption.rawValue))
+        view.addSubview(fruitImage)
+
     }
     
     
@@ -73,9 +77,9 @@ class ViewController: UIViewController {
         
         switch fruitOption {
         case let type where fruitOption == intEnumType.Apple:
-            fruitName_V2 = "apple.png"
+            fruitName_V2 = "apple.jpg"
         case let type where fruitOption == intEnumType.Pear:
-            fruitName_V2 = "pear.png"
+            fruitName_V2 = "pear.jpg"
         case let type where fruitOption == intEnumType.Strawberry:
             fruitName_V2 = "strawberry.png"
         case let type where fruitOption == intEnumType.Lemon:
@@ -86,6 +90,7 @@ class ViewController: UIViewController {
         
         if count(fruitName_V2) > 0 {
             fruitImage = UIImageView(image:UIImage(named:fruitName_V2))
+            view.addSubview(fruitImage)
         }
     }  // end fruitSelectedSwitchMethod
     
