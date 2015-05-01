@@ -24,7 +24,7 @@ enum intEnumType: Int {
     case Lemon
 }
 
-var fruitImage: UIImageView!
+var fruitImageView: UIImageView!
 var fruitName_V1: stringEnumType = .Apple
 
 
@@ -39,9 +39,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
       
-        let fruitImage =      UIImageView(image:UIImage(named:"strawberry.png"))
-        fruitImage.frame = CGRect(x: 0, y:0, width:100, height:100)
-        view.addSubview(fruitImage)
+        let fruitImageView =      UIImageView(image:UIImage(named:"strawberry.png"))
+        fruitImageView.frame = CGRect(x: 0, y:0, width:100, height:100)
+        view.addSubview(fruitImageView)
 
     }
 
@@ -60,9 +60,10 @@ class ViewController: UIViewController {
     // Use the .rawValue operator to get to the underlying value (string) from the enum as a value to pass into the UIImage.named call.
     func fruitSelectedDirectMethod_v1(fruitOption: stringEnumType) {
 // ?how do I clear previous image?
+        //fruitImageView.removeFromSuperview();  //runtime crash Bad instruction
         //view.clearsContextBeforeDrawing
-        fruitImage = UIImageView(image:UIImage(named: fruitOption.rawValue))
-        view.addSubview(fruitImage)
+        fruitImageView = UIImageView(image:UIImage(named: fruitOption.rawValue))
+        view.addSubview(fruitImageView)
 
     }
     
@@ -89,8 +90,8 @@ class ViewController: UIViewController {
         }
         
         if count(fruitName_V2) > 0 {
-            fruitImage = UIImageView(image:UIImage(named:fruitName_V2))
-            view.addSubview(fruitImage)
+            fruitImageView = UIImageView(image:UIImage(named:fruitName_V2))
+            view.addSubview(fruitImageView)
         }
     }  // end fruitSelectedSwitchMethod
     
