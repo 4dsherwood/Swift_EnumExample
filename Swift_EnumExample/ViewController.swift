@@ -4,6 +4,7 @@
 //
 // enum example based on Code from Wes Filleman
 //
+//
 
 import UIKit
 
@@ -28,7 +29,7 @@ var fruitImageView: UIImageView!
 var fruitName_V1: stringEnumType = .Apple
 
 
-var myFruitName_V2: intEnumType = intEnumType (rawValue: 1)! //Pear
+var fruitNameAsInt_V2: intEnumType = intEnumType (rawValue: 1)! //Pear
 var cannotUseImplicitType = 1  //this is an int and wont work with intEnumType
 
 
@@ -40,7 +41,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
       
         let fruitImageView =      UIImageView(image:UIImage(named:"strawberry.png"))
-        fruitImageView.frame = CGRect(x: 0, y:0, width:100, height:100)
+        fruitImageView.frame = CGRect(x: 0, y:25, width:250, height:250)
         view.addSubview(fruitImageView)
 
     }
@@ -50,7 +51,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func buttonNextFruit_v2(sender: UIButton) {
-        fruitSelectedSwitchMethod_v2(myFruitName_V2)
+        fruitSelectedSwitchMethod_v2(fruitNameAsInt_V2)
     }
     
     // USAGE EXAMPLES
@@ -63,6 +64,7 @@ class ViewController: UIViewController {
         //fruitImageView.removeFromSuperview();  //runtime crash Bad instruction
         //view.clearsContextBeforeDrawing
         fruitImageView = UIImageView(image:UIImage(named: fruitOption.rawValue))
+        fruitImageView.frame = CGRect(x: 0, y:25, width:250, height:250)
         view.addSubview(fruitImageView)
 
     }
@@ -91,6 +93,7 @@ class ViewController: UIViewController {
         
         if count(fruitName_V2) > 0 {
             fruitImageView = UIImageView(image:UIImage(named:fruitName_V2))
+            fruitImageView.frame = CGRect(x: 0, y:25, width:250, height:250)
             view.addSubview(fruitImageView)
         }
     }  // end fruitSelectedSwitchMethod
