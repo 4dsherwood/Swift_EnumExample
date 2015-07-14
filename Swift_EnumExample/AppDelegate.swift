@@ -3,6 +3,9 @@
 //  Swift_EnumExample
 //
 //
+// Example of a line I added
+// Example change made by Scott Shea
+
 
 import UIKit
 
